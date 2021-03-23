@@ -2,122 +2,197 @@
 <html lang="en">
     <head>
         <title>Sports World</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-        
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=yes"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(59, 0, 168);">
-            <a class="navbar-brand" href="#" style="color: rgb(248, 225, 120);">SportsWorld</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark" id="nbbg">
+            <a class="navbar-brand" href="#" id="sw">SportsWorld</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" style="color: greenyellow;">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#" id="nl1"
+                            >Home<span class="sr-only">(current)</span></a
+                        >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: greenyellow;">Football</a>
+                        <a class="nav-link" href="#" id="nl2"
+                            >Football Rankings</a
+                        >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: greenyellow;">Baseball</a>
+                        <a class="nav-link" href="#" id="nl3"
+                            >Baseball Rankings</a
+                        >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: greenyellow;">Basketball</a>
+                        <a class="nav-link" href="#" id="nl4"
+                            >Basketball Rankings</a
+                        >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" style="color: greenyellow;">Hockey</a>
+                        <a class="nav-link" href="#" id="nl5"
+                            >Hockey Rankings</a
+                        >
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="background-color: rgb(141, 166, 245);">
-                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    <input
+                        class="form-control mr-sm-2"
+                        id="s1"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                    />
+                    <button
+                        class="btn btn-outline-primary my-2 my-sm-0"
+                        type="submit"
+                    >
+                        Search
+                    </button>
                 </form>
             </div>
         </nav>
-        <div class="container-fluid" id="wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md" id="sidebar1">
-                                <h4>Top Stories</h4>
-                                <hr>
-                                <ul>
-                                    <li>Ninjas up big in 5th</li>
-                                    <li>Best sports cities</li>
-                                    <li>Choi joins Hall of Fame</li>
-                                    <li>Tournament underway</li>
-                                    <li>Samurai at Wizards</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md" id="sidebar2">
-                                <h6 class="h6m">Customize your DSNN</h6>
-                                <button type="button" class="btn btn-primary btn-sm">Sign In</button>
-                                <button type="button" class="btn btn-secondary btn-sm">Sign Up</button>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md" id="sidebar3">
-                                <h6 class="h6m">Customize your DSNN</h6>
-                                <button type="button" class="btn btn-primary btn-block" id="subscribe">Subscribe</button>
-                            </div>
+        <!-- <div class="container-fluid" id="wrapper"> -->
+        <div class="container" id="wrapper">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md" id="sidebar1">
+                            <h4>Top Stories</h4>
+                            <hr />
+                            <ul>
+                                <li>Ninjas up big in 5th</li>
+                                <li>Best sports cities</li>
+                                <li>Choi joins Hall of Fame</li>
+                                <li>Tournament underway</li>
+                                <li>Samurai at Wizards</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="col-md" id="main">
-                            <h1 class="display-6" ><span class="live">&#9679; Live</span> Ninjas leading Pirates</h1>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <img src="./Images/Ninjas.jfif" alt="Ninjas">
-                                    <h6>San Jose</h6>
-                                    <h3>Ninjas</h3>
-                                    <p>(10-3)</p>
-                                    <div>
-                                        <h2 class="score">314</h2>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <h3 class="vs">VS</h3>
-                                    <div>
-                                        <ul>
-                                            <li>0:33 remaining</li>
-                                            <li>2nd Period</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <img src="./Images/Pirates.jfif" alt="Pirates">
-                                    <h6>Nova Scotia</h6>
-                                    <h3>Pirates</h3>
-                                    <p>(12-3)</p>
-                                    <div>
-                                        <h2 class="score">159</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <footer class="mainfoot">
-                                <p>A conservative match between the two top-performing sides in the Central League Division with a number 1 seed at stake...<a href="">get live updates--</a></p>
-                            </footer>
+                    <div class="row">
+                        <div class="col-md" id="sidebar2">
+                            <h6 class="h6m">Customize your DSNN</h6>
+                            <button
+                                type="button"
+                                class="btn btn-primary btn-sm"
+                            >
+                                Sign In
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-secondary btn-sm"
+                                id="signup"
+                            >
+                                Sign Up
+                            </button>
                         </div>
                     </div>
-                    
+                    <div class="row">
+                        <div class="col-md" id="sidebar3">
+                            <h6 class="h6m">Never miss a play!</h6>
+                            <button
+                                type="button"
+                                class="btn btn-primary btn-block"
+                                id="subscribe"
+                            >
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                
-                
+                <div class="col-md-8">
+                    <div class="col-md" id="main">
+                        <h1 class="display-6">
+                            <span class="live">&#9679; Live</span> Ninjas
+                            leading Pirates
+                        </h1>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="./Images/Ninjas.jfif" alt="Ninjas" />
+                                <h6>San Jose</h6>
+                                <h3>Ninjas</h3>
+                                <p>(10-3)</p>
+                                <div>
+                                    <h2 class="score" id="njs">314</h2>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <h3 class="vs">VS</h3>
+                                <div>
+                                    <ul>
+                                        <li>0:33 remaining</li>
+                                        <li>2nd Period</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <img
+                                    src="./Images/Pirates.jfif"
+                                    alt="Pirates"
+                                />
+                                <h6>Nova Scotia</h6>
+                                <h3>Pirates</h3>
+                                <p>(12-3)</p>
+                                <div>
+                                    <h2 class="score" id="prs">159</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <footer class="mainfoot">
+                            <p>
+                                A conservative match between the two
+                                top-performing sides in the Central League
+                                Division with a number 1 seed at stake...<a
+                                    href=""
+                                    >get live updates--</a
+                                >
+                            </p>
+                        </footer>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- </div> -->
+        <script src="app.js"></script>
     </body>
 </html>
-
