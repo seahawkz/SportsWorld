@@ -8,11 +8,7 @@ $(document).ready(function () {
         $("#sidebar3").show();
     });
     // Add 1 to score
-    $("#njs").click(function () {
-        var num = parseInt($.trim($(this).html()));
-        $(this).html(++num);
-    });
-    $("#prs").click(function () {
+    $(".score").click(function () {
         var num = parseInt($.trim($(this).html()));
         $(this).html(++num);
     });
