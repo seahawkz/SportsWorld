@@ -24,6 +24,7 @@ $(document).ready(function () {
     $("#top10").click(function () {
         $.get("https://randomuser.me/api/?results=10.", function (data) {
             var results = data.results;
+            $("#topgolf").empty();
             for (var i = 0; i < results.length; i++) {
                 var name = results[i].name;
                 var age = results[i].dob;
