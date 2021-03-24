@@ -41,5 +41,6 @@ $(document).ready(function () {
                 $("#topgolf").append(info);
             }
         });
+        $("#topgolf").show();
     });
 });
