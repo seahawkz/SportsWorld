@@ -24,7 +24,7 @@ $(document).ready(function () {
     $("#top10").click(function () {
         $.get("https://randomuser.me/api/?results=10.", function (data) {
             var results = data.results;
-            $("#topgolf").empty();
+            $("#userdata").empty();
             for (var i = 0; i < results.length; i++) {
                 var name = results[i].name;
                 var age = results[i].dob;
@@ -39,7 +39,7 @@ $(document).ready(function () {
                 info += "<td>" + `${age.age}` + "</td>";
                 info += "<td>" + `${location.country}` + "</td>";
                 info += "</tr>";
-                $("#topgolf").append(info);
+                $("#userdata").append(info);
             }
         });
         $("#topgolf").show();
