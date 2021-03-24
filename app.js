@@ -21,7 +21,25 @@ $(document).ready(function () {
         alert("The Ninjas have won!");
     }, 13000);
 
-    $("#get-data").click(function () {
-        $.get("https://pokeapi.co/api/v2/pokemon", function (data) {});
+    $("#top10").click(function () {
+        $.get("https://randomuser.me/api/?results=10.", function (data) {
+            var results = data.results;
+            for (var i = 0; i < results.length; i++) {
+                var name = results[i].name;
+                var age = results[i].dob;
+                var email = results[i].email;
+                var location = results[i].location;
+                //Create empty row
+                var info = "";
+                //Load info into row var
+                info += "<tr>";
+                info += "<td>" + `${i + 1}` + "</td>";
+                info += "<td>" + `${name.first} ${name.last}` + "</td>";
+                info += "<td>" + `${age.age}` + "</td>";
+                info += "<td>" + `${location.country}` + "</td>";
+                info += "</tr>";
+                $("#topgolf").append(info);
+            }
+        });
     });
 });
